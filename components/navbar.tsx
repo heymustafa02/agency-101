@@ -9,6 +9,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Link } from "@nextui-org/link";
+import DynamicLogo from "./dynamiclogo";
 import { Button } from "@nextui-org/button";
 import ThemeSwitcher from "@/components/theme-switcher";
 import {
@@ -30,8 +31,6 @@ export default function NavBar() {
   const menuItems = [
     "Pricing",
     "FAQs",
-    "Features",
-    "Contact"
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -62,7 +61,7 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-2xl flex gap-3 justify-center items-center"
           >
-            <img src="/logo.png" alt="Acme" className="w-10 h-9" />
+           <DynamicLogo/>
           </a>
         </NavbarBrand>
         <NavbarItem>

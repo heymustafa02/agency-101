@@ -8,6 +8,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -26,9 +27,9 @@ export const metadata: ExtendedMetadata = {
   title: "Mash Agency",
   description: "Landing Page template using NextJs 14, NextUI, TailwindCSS.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo-dark.png",
+    shortcut: "/logo-dark.png",
+    apple: "/logo-dark.png",
   },
 };
 
@@ -40,9 +41,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      
-  <link rel="icon" href="/logo.png" />
-
         <script></script>
       </head>
       <body
