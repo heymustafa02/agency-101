@@ -15,8 +15,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "NextUI SaaS Template",
+  title: "Mash Agency",
   description: "Landing Page template using NextJs 14, NextUI, TailwindCSS.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -27,11 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          defer
-          data-domain="nextui.gonzalochale.dev"
-          src="https://plausible.gonzalochale.dev/js/script.outbound-links.js"
-        ></script>
+        <script></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -27,13 +27,15 @@ export default function Hero() {
           className="flex flex-col justify-center items-center space-y-5 max-w-4xl mx-auto text-center"
         >
           <span className="w-fit h-full text-sm bg-card px-2 py-1 border border-border rounded-full">
-            NextUI template its here!
-          </span>
+              Let's Build Your Project
+            </span>
           <h1 className="text-4xl font-medium tracking-tighter mx-auto md:text-6xl text-pretty ">
-            Use Nextjs and NextUI to build your website
+          Build world class websites fastly
           </h1>
           <p className="max-w-2xl text-lg mx-auto text-muted-foreground text-balance">
-            Create your website with NextUI and Nextjs, the best UI Framework.
+          Bringing bold ideas to life with seamless design, creating experiences that stays.
+
+
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -48,15 +50,14 @@ export default function Hero() {
               onOpenChange={onOpenChange}
             >
               <ModalContent>
-                <ModalHeader>Gonzalo Chalé</ModalHeader>
+                <ModalHeader>Mustafa Mallebhari</ModalHeader>
                 <ModalBody>
-                  I&apos;m Systems Engineer from Cancún, México, always building
-                  things for the web.
+                  I&apos;m a Full stack Developer shipping products on the web.
                 </ModalBody>
                 <ModalFooter>
                   <Button
                     as={Link}
-                    href="https://x.com/gonzalochale"
+                    href="https://x.com/mallebhari_"
                     color="primary"
                     variant="solid"
                     size="sm"

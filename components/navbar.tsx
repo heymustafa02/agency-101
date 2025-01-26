@@ -27,7 +27,19 @@ import {
 } from "@radix-ui/react-icons";
 
 export default function NavBar() {
-  const menuItems = ["docs", "features", "pricing", "blog"];
+  const menuItems = [
+    "Pricing",
+    "FAQs",
+    "Features",
+    "Contact"
+  ];
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Navbar isBlurred maxWidth="xl">
@@ -40,7 +52,7 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-inherit text-lg"
           >
-            Acme
+            Mash
           </a>
         </NavbarBrand>
       </NavbarContent>
@@ -50,12 +62,25 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-2xl flex gap-3 justify-center items-center"
           >
-            Acme
+            <img src="/logo.png" alt="Acme" className="w-10 h-9" />
           </a>
         </NavbarBrand>
         <NavbarItem>
-          <Button as={Link} variant="light" size="sm">
-            Navbar Item
+          <Button 
+            variant="light" 
+            size="sm" 
+            onClick={() => scrollToSection('pricing')}
+          >
+            Pricing
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button 
+            variant="light" 
+            size="sm" 
+            onClick={() => scrollToSection('faqs')}
+          >
+            FAQs
           </Button>
         </NavbarItem>
         <NavbarItem>
@@ -66,7 +91,7 @@ export default function NavBar() {
                 variant="light"
                 size="sm"
               >
-                Dropdown
+                More
               </Button>
             </DropdownTrigger>
             <DropdownMenu
@@ -85,7 +110,7 @@ export default function NavBar() {
               </DropdownItem>
               <DropdownItem
                 key="usage_metrics"
-                description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                description="Real-time metrics to debug issues. Slow query added? We'll show you exactly where."
                 startContent={<PersonIcon />}
               >
                 Usage Metrics
@@ -120,7 +145,7 @@ export default function NavBar() {
           <Button
             as={Link}
             color="primary"
-            href="https://x.com/gonzalochale"
+            href="https://x.com/mallebhari_"
             variant="solid"
             className="hidden sm:flex"
             size="sm"
@@ -147,7 +172,16 @@ export default function NavBar() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href="#" size="lg" color="foreground">
+            <Link 
+              className="w-full" 
+              href="#" 
+              size="lg" 
+              color="foreground"
+              onClick={() => {
+                const sectionId = item.toLowerCase();
+                scrollToSection(sectionId);
+              }}
+            >
               {item}
             </Link>
           </NavbarMenuItem>

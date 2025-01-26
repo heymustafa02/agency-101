@@ -4,11 +4,13 @@ import Partners from "@/components/partners";
 import Pricing from "@/components/pricing";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
+import { AuroraBackgroundDemo } from "./aurora";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-dvh">
       <NavBar />
+     
       <Hero />
       <Partners />
       <Pricing />

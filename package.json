@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-website",
+  "name": "mash-agency",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -35,5 +35,8 @@
     "Typescript"
   ],
   "author": "Mustafa Mallebhari",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  }
 }
