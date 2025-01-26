@@ -14,7 +14,15 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
+interface ExtendedMetadata extends Metadata {
+  icons: {
+    icon: string;
+    shortcut: string;
+    apple: string;
+  };
+}
+
+export const metadata: ExtendedMetadata = {
   title: "Mash Agency",
   description: "Landing Page template using NextJs 14, NextUI, TailwindCSS.",
   icons: {

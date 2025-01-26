@@ -1,5 +1,5 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
+
 import { Button } from "@nextui-org/button";
 import { motion } from "framer-motion";
 import {
