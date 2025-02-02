@@ -51,7 +51,7 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-inherit text-lg"
           >
-            Mash
+           <DynamicLogo/>
           </a>
         </NavbarBrand>
       </NavbarContent>
